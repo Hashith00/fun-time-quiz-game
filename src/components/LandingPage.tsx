@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BrainCircuit, Trophy, Timer, Book, Users, Star, Sparkles } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Trophy, Timer, Book, Users, Star, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "./layout/Header";
 import { Footer } from "./layout/Footer";
@@ -11,7 +11,7 @@ export function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       {/* Hero Section */}
       <main className="flex-grow">
         <section className="pt-24 pb-16 px-4 bg-gradient-to-b from-background to-muted">
@@ -21,12 +21,13 @@ export function LandingPage() {
                 Challenge Your Knowledge
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Test your skills, learn new facts, and compete with others in our interactive quiz platform.
+                Test your skills, learn new facts, and compete with others in
+                our interactive quiz platform.
               </p>
-              <Button 
+              <Button
                 size="lg"
                 className="text-lg px-8 py-6 transition-all hover:scale-[1.02]"
-                onClick={() => navigate('/quiz')}
+                onClick={() => navigate("/quiz")}
               >
                 Start Your Quest
               </Button>
@@ -55,7 +56,9 @@ export function LandingPage() {
         {/* Features Section */}
         <section id="features" className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Knowledge Quest?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Why Choose Knowledge Quest?
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <BenefitCard
                 icon={Users}
@@ -81,14 +84,15 @@ export function LandingPage() {
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold mb-6">About Knowledge Quest</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Knowledge Quest is more than just a quiz platform. It's a journey of discovery, 
-              learning, and personal growth. Our mission is to make learning engaging and fun 
-              while helping you expand your knowledge across various subjects.
+              Knowledge Quest is more than just a quiz platform. It's a journey
+              of discovery, learning, and personal growth. Our mission is to
+              make learning engaging and fun while helping you expand your
+              knowledge across various subjects.
             </p>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
-              onClick={() => navigate('/quiz')}
+              onClick={() => navigate("/quiz")}
             >
               Begin Your Journey
             </Button>
@@ -101,10 +105,14 @@ export function LandingPage() {
   );
 }
 
-function FeatureCard({ icon: Icon, title, description }: { 
-  icon: typeof Trophy; 
-  title: string; 
-  description: string; 
+function FeatureCard({
+  icon: Icon,
+  title,
+  description,
+}: {
+  icon: typeof Trophy;
+  title: string;
+  description: string;
 }) {
   return (
     <Card className="border-2">
@@ -121,7 +129,11 @@ function FeatureCard({ icon: Icon, title, description }: {
   );
 }
 
-function BenefitCard({ icon: Icon, title, description }: {
+function BenefitCard({
+  icon: Icon,
+  title,
+  description,
+}: {
   icon: typeof Trophy;
   title: string;
   description: string;

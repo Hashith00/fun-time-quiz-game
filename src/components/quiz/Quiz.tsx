@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { QuizCard } from './QuizCard';
-import { QuizResult } from './QuizResult';
-import { QuizTimer } from './QuizTimer';
-import questionsData from '@/data/questions.json';
+import { useState, useEffect } from "react";
+import { QuizCard } from "../QuizCard";
+import { QuizResult } from "../QuizResult";
+import { QuizTimer } from "./QuizTimer";
+import questionsData from "@/data/questions.json";
 import { Progress } from "@/components/ui/progress";
-import { useNavigate } from 'react-router-dom';
-import { Header } from '../layout/Header';
+import { useNavigate } from "react-router-dom";
+import { Header } from "../layout/Header";
 
 const QUESTION_DURATION = 30; // seconds per question
 
@@ -26,20 +26,22 @@ export function Quiz() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const shuffled = [...questionsData.questions].sort(() => 0.5 - Math.random());
+    const shuffled = [...questionsData.questions].sort(
+      () => 0.5 - Math.random()
+    );
     setQuestions(shuffled.slice(0, 10));
   }, []);
 
   const handleAnswer = (isCorrect: boolean) => {
     setIsAnswered(true);
     if (isCorrect) {
-      setScore(prev => prev + 1);
+      setScore((prev) => prev + 1);
     }
   };
 
   const handleNext = () => {
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
+      setCurrentQuestionIndex((prev) => prev + 1);
       setIsAnswered(false);
     } else {
       setIsFinished(true);
@@ -53,7 +55,9 @@ export function Quiz() {
   };
 
   const handleRestart = () => {
-    const shuffled = [...questionsData.questions].sort(() => 0.5 - Math.random());
+    const shuffled = [...questionsData.questions].sort(
+      () => 0.5 - Math.random()
+    );
     setQuestions(shuffled.slice(0, 10));
     setCurrentQuestionIndex(0);
     setScore(0);
@@ -78,7 +82,7 @@ export function Quiz() {
             score={score}
             totalQuestions={questions.length}
             onRestart={handleRestart}
-            onHome={() => navigate('/')}
+            onHome={() => navigate("/")}
           />
         </div>
       </>
@@ -94,20 +98,22 @@ export function Quiz() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto space-y-6">
             <div className="grid gap-4">
-              <QuizTimer 
-                duration={QUESTION_DURATION} 
+              <QuizTimer
+                duration={QUESTION_DURATION}
                 onTimeUp={handleTimeUp}
                 isActive={!isAnswered}
               />
               <div className="space-y-2">
                 <div className="flex justify-between text-sm text-muted-foreground">
                   <span>Progress</span>
-                  <span>{currentQuestionIndex + 1}/{questions.length}</span>
+                  <span>
+                    {currentQuestionIndex + 1}/{questions.length}
+                  </span>
                 </div>
                 <Progress value={progress} className="h-2" />
               </div>
             </div>
-            
+
             <QuizCard
               question={questions[currentQuestionIndex].question}
               options={questions[currentQuestionIndex].options}
