@@ -1,0 +1,88 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": ["London", "Berlin", "Paris", "Madrid"],
+      "correctAnswer": "Paris",
+      "explanation": "Paris is the capital and largest city of France, known for its iconic Eiffel Tower and rich cultural heritage."
+    },
+    {
+      "id": 2,
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correctAnswer": "Mars",
+      "explanation": "Mars is called the Red Planet because of its reddish appearance, which is due to iron oxide (rust) on its surface."
+    },
+    {
+      "id": 3,
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
+      "correctAnswer": "Leonardo da Vinci",
+      "explanation": "The Mona Lisa was painted by Italian Renaissance artist Leonardo da Vinci between 1503 and 1519."
+    },
+    {
+      "id": 4,
+      "question": "What is the largest organ in the human body?",
+      "options": ["Heart", "Brain", "Liver", "Skin"],
+      "correctAnswer": "Skin",
+      "explanation": "The skin is the largest organ of the human body, covering about 20 square feet in adults."
+    },
+    {
+      "id": 5,
+      "question": "Which element has the chemical symbol 'Au'?",
+      "options": ["Silver", "Gold", "Copper", "Aluminum"],
+      "correctAnswer": "Gold",
+      "explanation": "Au is the chemical symbol for Gold, derived from the Latin word 'aurum'."
+    },
+    {
+      "id": 6,
+      "question": "What is the smallest prime number?",
+      "options": ["0", "1", "2", "3"],
+      "correctAnswer": "2",
+      "explanation": "2 is the smallest and only even prime number. A prime number is only divisible by 1 and itself."
+    },
+    {
+      "id": 7,
+      "question": "Which country is home to the Great Barrier Reef?",
+      "options": ["Brazil", "Australia", "Indonesia", "Thailand"],
+      "correctAnswer": "Australia",
+      "explanation": "The Great Barrier Reef is located off the coast of Queensland, Australia. It's the world's largest coral reef system."
+    },
+    {
+      "id": 8,
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      "correctAnswer": "William Shakespeare",
+      "explanation": "Romeo and Juliet was written by William Shakespeare around 1595."
+    },
+    {
+      "id": 9,
+      "question": "What is the speed of light?",
+      "options": ["299,792 km/s", "199,792 km/s", "399,792 km/s", "499,792 km/s"],
+      "correctAnswer": "299,792 km/s",
+      "explanation": "Light travels at approximately 299,792 kilometers per second in a vacuum."
+    },
+    {
+      "id": 10,
+      "question": "Which programming language was created by Brendan Eich?",
+      "options": ["Python", "Java", "JavaScript", "C++"],
+      "correctAnswer": "JavaScript",
+      "explanation": "JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications Corporation."
+    },
+    {
+      "id": 11,
+      "question": "What is the capital of Japan?",
+      "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+      "correctAnswer": "Tokyo",
+      "explanation": "Tokyo is the capital and largest city of Japan, known for its modern technology and traditional culture."
+    },
+    {
+      "id": 12,
+      "question": "Who invented the telephone?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Albert Einstein"],
+      "correctAnswer": "Alexander Graham Bell",
+      "explanation": "Alexander Graham Bell invented the first practical telephone and was awarded the patent in 1876."
+    }
+  ]
+}
