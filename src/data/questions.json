@@ -2,87 +2,164 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is the capital of France?",
-      "options": ["London", "Berlin", "Paris", "Madrid"],
-      "correctAnswer": "Paris",
-      "explanation": "Paris is the capital and largest city of France, known for its iconic Eiffel Tower and rich cultural heritage."
+      "question": "What is Spring Boot?",
+      "options": ["A JavaScript framework", "A tool for database management", "A framework to simplify Java development", "An IDE for Java"],
+      "correctAnswer": "A framework to simplify Java development",
+      "explanation": "Spring Boot is a framework that simplifies Java development by providing pre-configured setups and minimizing boilerplate code."
     },
     {
       "id": 2,
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-      "correctAnswer": "Mars",
-      "explanation": "Mars is called the Red Planet because of its reddish appearance, which is due to iron oxide (rust) on its surface."
+      "question": "What is the primary purpose of Kafka?",
+      "options": ["To process images", "To stream and process data", "To act as a relational database", "To build web applications"],
+      "correctAnswer": "To stream and process data",
+      "explanation": "Apache Kafka is used for building real-time streaming data pipelines and applications that process or react to data streams."
     },
     {
       "id": 3,
-      "question": "Who painted the Mona Lisa?",
-      "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
-      "correctAnswer": "Leonardo da Vinci",
-      "explanation": "The Mona Lisa was painted by Italian Renaissance artist Leonardo da Vinci between 1503 and 1519."
+      "question": "What annotation is used to define a Spring Boot application?",
+      "options": ["@Component", "@Service", "@SpringBootApplication", "@Repository"],
+      "correctAnswer": "@SpringBootApplication",
+      "explanation": "The @SpringBootApplication annotation is used to define the main class of a Spring Boot application."
     },
     {
       "id": 4,
-      "question": "What is the largest organ in the human body?",
-      "options": ["Heart", "Brain", "Liver", "Skin"],
-      "correctAnswer": "Skin",
-      "explanation": "The skin is the largest organ of the human body, covering about 20 square feet in adults."
+      "question": "Which dependency is required to integrate Spring Boot with Kafka?",
+      "options": ["spring-boot-starter-data-jpa", "spring-boot-starter-web", "spring-boot-starter-kafka", "spring-boot-starter-thymeleaf"],
+      "correctAnswer": "spring-boot-starter-kafka",
+      "explanation": "The spring-boot-starter-kafka dependency provides the libraries necessary for Spring Boot to work with Apache Kafka."
     },
     {
       "id": 5,
-      "question": "Which element has the chemical symbol 'Au'?",
-      "options": ["Silver", "Gold", "Copper", "Aluminum"],
-      "correctAnswer": "Gold",
-      "explanation": "Au is the chemical symbol for Gold, derived from the Latin word 'aurum'."
+      "question": "What is a Kafka topic?",
+      "options": ["A database table", "A log of messages", "An application framework", "A type of thread"],
+      "correctAnswer": "A log of messages",
+      "explanation": "A Kafka topic is a category or feed name to which messages are sent and from which messages are consumed."
     },
     {
       "id": 6,
-      "question": "What is the smallest prime number?",
-      "options": ["0", "1", "2", "3"],
-      "correctAnswer": "2",
-      "explanation": "2 is the smallest and only even prime number. A prime number is only divisible by 1 and itself."
+      "question": "What is the default embedded server used by Spring Boot?",
+      "options": ["Apache Tomcat", "Jetty", "Undertow", "GlassFish"],
+      "correctAnswer": "Apache Tomcat",
+      "explanation": "Spring Boot uses Apache Tomcat as its default embedded server for web applications."
     },
     {
       "id": 7,
-      "question": "Which country is home to the Great Barrier Reef?",
-      "options": ["Brazil", "Australia", "Indonesia", "Thailand"],
-      "correctAnswer": "Australia",
-      "explanation": "The Great Barrier Reef is located off the coast of Queensland, Australia. It's the world's largest coral reef system."
+      "question": "What is a Kafka producer?",
+      "options": ["An application that consumes messages", "An application that produces messages", "A type of Kafka broker", "A Kafka partition"],
+      "correctAnswer": "An application that produces messages",
+      "explanation": "A Kafka producer is responsible for sending records to a Kafka topic."
     },
     {
       "id": 8,
-      "question": "Who wrote 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-      "correctAnswer": "William Shakespeare",
-      "explanation": "Romeo and Juliet was written by William Shakespeare around 1595."
+      "question": "What is the role of @KafkaListener in Spring Boot?",
+      "options": ["To send messages to Kafka", "To receive messages from Kafka", "To configure Kafka topics", "To monitor Kafka brokers"],
+      "correctAnswer": "To receive messages from Kafka",
+      "explanation": "The @KafkaListener annotation is used in Spring Boot to define a method that listens to messages from a Kafka topic."
     },
     {
       "id": 9,
-      "question": "What is the speed of light?",
-      "options": ["299,792 km/s", "199,792 km/s", "399,792 km/s", "499,792 km/s"],
-      "correctAnswer": "299,792 km/s",
-      "explanation": "Light travels at approximately 299,792 kilometers per second in a vacuum."
+      "question": "What is the purpose of Kafka partitions?",
+      "options": ["To store configuration files", "To distribute message load", "To define security settings", "To schedule tasks"],
+      "correctAnswer": "To distribute message load",
+      "explanation": "Kafka partitions allow messages in a topic to be distributed across multiple brokers, enabling scalability and parallelism."
     },
     {
       "id": 10,
-      "question": "Which programming language was created by Brendan Eich?",
-      "options": ["Python", "Java", "JavaScript", "C++"],
-      "correctAnswer": "JavaScript",
-      "explanation": "JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications Corporation."
+      "question": "Which annotation is used to configure Kafka properties in Spring Boot?",
+      "options": ["@EnableKafka", "@KafkaConfiguration", "@KafkaProperties", "@EnableAsync"],
+      "correctAnswer": "@EnableKafka",
+      "explanation": "The @EnableKafka annotation is used to enable Kafka-related features and configuration in a Spring Boot application."
     },
     {
       "id": 11,
-      "question": "What is the capital of Japan?",
-      "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
-      "correctAnswer": "Tokyo",
-      "explanation": "Tokyo is the capital and largest city of Japan, known for its modern technology and traditional culture."
+      "question": "What is Spring Boot Actuator used for?",
+      "options": ["Scheduling tasks", "Managing database connections", "Monitoring and managing applications", "Logging messages"],
+      "correctAnswer": "Monitoring and managing applications",
+      "explanation": "Spring Boot Actuator provides production-ready features like metrics, health checks, and environment information."
     },
     {
       "id": 12,
-      "question": "Who invented the telephone?",
-      "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Albert Einstein"],
-      "correctAnswer": "Alexander Graham Bell",
-      "explanation": "Alexander Graham Bell invented the first practical telephone and was awarded the patent in 1876."
+      "question": "What is the default port for a Spring Boot application?",
+      "options": ["8080", "9090", "3000", "8000"],
+      "correctAnswer": "8080",
+      "explanation": "By default, Spring Boot applications run on port 8080 unless otherwise specified in the configuration."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of a Kafka broker?",
+      "options": ["To produce messages", "To process database queries", "To manage topic partitions", "To store and manage messages"],
+      "correctAnswer": "To store and manage messages",
+      "explanation": "Kafka brokers are responsible for storing, managing, and serving messages for topics."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of Kafka offset?",
+      "options": ["To monitor server health", "To track the read position in a partition", "To manage thread synchronization", "To configure Kafka brokers"],
+      "correctAnswer": "To track the read position in a partition",
+      "explanation": "Offsets in Kafka are used to keep track of the position of messages that a consumer has read in a partition."
+    },
+    {
+      "id": 15,
+      "question": "What is the role of Kafka Zookeeper?",
+      "options": ["To store application logs", "To synchronize Kafka brokers", "To process Kafka streams", "To define Kafka topics"],
+      "correctAnswer": "To synchronize Kafka brokers",
+      "explanation": "Zookeeper is used to manage and coordinate Kafka brokers by storing metadata and configurations."
+    },
+    {
+      "id": 16,
+      "question": "Which Spring Boot file is typically used for configuration?",
+      "options": ["application.yaml", "config.js", "pom.xml", "kafka.properties"],
+      "correctAnswer": "application.yaml",
+      "explanation": "The application.yaml or application.properties file is used to configure Spring Boot applications."
+    },
+    {
+      "id": 17,
+      "question": "What is a Kafka consumer group?",
+      "options": ["A collection of brokers", "A group of partitions", "A set of consumers working together", "A type of message queue"],
+      "correctAnswer": "A set of consumers working together",
+      "explanation": "A Kafka consumer group is a set of consumers that work together to consume messages from a topic."
+    },
+    {
+      "id": 18,
+      "question": "What is Spring Boot DevTools used for?",
+      "options": ["Logging", "Performance tuning", "Auto-reloading during development", "Securing applications"],
+      "correctAnswer": "Auto-reloading during development",
+      "explanation": "Spring Boot DevTools provides features like automatic restarting and caching during development to improve productivity."
+    },
+    {
+      "id": 19,
+      "question": "What is Kafka Streams used for?",
+      "options": ["Database migrations", "Data stream processing", "Web development", "Security encryption"],
+      "correctAnswer": "Data stream processing",
+      "explanation": "Kafka Streams is a library for building applications that process data in real-time streams."
+    },
+    {
+      "id": 20,
+      "question": "Which Spring Boot tool generates project skeletons?",
+      "options": ["Spring Framework CLI", "Spring Boot CLI", "Kafka CLI", "Maven CLI"],
+      "correctAnswer": "Spring Boot CLI",
+      "explanation": "The Spring Boot CLI is a command-line tool for generating Spring Boot project structures quickly."
+    },
+    {
+      "id": 21,
+      "question": "What is Kafka Connect used for?",
+      "options": ["To secure messages", "To integrate Kafka with external systems", "To schedule tasks", "To optimize performance"],
+      "correctAnswer": "To integrate Kafka with external systems",
+      "explanation": "Kafka Connect is a tool for streaming data between Kafka and other systems such as databases or object stores."
+    },
+    {
+      "id": 22,
+      "question": "Which annotation enables scheduling in Spring Boot?",
+      "options": ["@Scheduled", "@EnableScheduling", "@EnableTasks", "@EnableAsync"],
+      "correctAnswer": "@EnableScheduling",
+      "explanation": "The @EnableScheduling annotation allows you to schedule tasks in a Spring Boot application."
+    },
+    {
+      "id": 23,
+      "question": "What is the use of Spring KafkaTemplate?",
+      "options": ["To process data", "To configure Kafka brokers", "To send messages to Kafka topics", "To consume messages"],
+      "correctAnswer": "To send messages to Kafka topics",
+      "explanation": "Spring KafkaTemplate is used to send messages to Kafka topics programmatically."
     }
   ]
 }
