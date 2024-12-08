@@ -22,7 +22,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-3">Connect With Us</h3>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="https://github.com/Hashith00/fun-time-quiz-game/tree/main" className="text-muted-foreground hover:text-primary">
                 <Github className="h-5 w-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary">
